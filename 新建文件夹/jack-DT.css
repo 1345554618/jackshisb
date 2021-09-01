@@ -1,0 +1,176 @@
+.logo{
+    margin: auto;
+    padding: 30px 0;
+    width: 300px;
+    float: left;
+    z-index: 3px;
+}
+.name1{
+    padding-left: 350px;
+    font-family: Bookman, URW Bookman L, serif;
+    width: auto;
+    margin: auto;
+    padding-top: 10px;
+    color: #D3D9CF;
+    
+}
+.top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #72776C;
+    border: 1px solid rgb(200,200,200);
+    border-color: #2C342D;
+    width: auto;
+    height:130px;
+    z-index: 3px;
+    margin: -10px;
+    padding: -10px;
+}
+
+.main{
+    top: 0px;
+    background-color: #2C342D;
+    border: 1px solid rgb(200,200,200);
+    border-color: #2C342D;
+    width: auto;
+    height:130px;
+    z-index: 3px;
+    margin: -10px;
+    padding: -10px;
+}
+.main-top{
+    text-align: center;
+    font-family: Times, Times New Roman, serif;
+    color: #D3D9CF;
+    
+}
+.main-mid{
+    width: 1395px;
+    padding: 25px;
+    margin: -10px;
+    background-color: #D3D9CF;
+    text-align: center;
+}
+
+
+.end{
+    background-color: #72776C;
+    margin: -8px;
+    text-align: center;
+    height: 170px;
+}
+
+
+.ul{
+    width: 800px;
+    margin: 0 auto;
+}
+.li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+}
+.img{
+    background: #eee;
+    width: 100px;
+    height: 100px;
+    box-decoration-break: 2px 2px 3px rgda(0,0,0,.4);
+    margin-bottom: 10px;
+}
+
+
+
+/*head 上去别的page的link*/
+.gallery{
+    border-style: outset;
+    border-right-width: 7px;
+    border-left-width: 7px;
+    color: #D3D9CF;
+    float: right;
+    border-bottom-color: #D3D9CF;
+    padding: 3px;
+    margin-right: 10px;
+    z-index: 3px;
+}
+
+
+
+
+/*中间图片循环播放《无需改动》*/
+.slider_container {
+    margin: -10px;
+    padding: -10px;
+    width: auto;
+    height: 650px;
+    position: relative;    
+    z-index: -2;
+    text-align: center;
+    border: 20px solid;
+    border-color: #2C342D;
+    border-width: 800;
+    border-bottom-width: auto ;
+}
+
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 15s linear infinite;
+            animation: round 15s linear infinite;
+}
+
+@-webkit-keyframes round {
+    5% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    10% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    15% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    5% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    10% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    15% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
